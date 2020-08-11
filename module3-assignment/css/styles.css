@@ -1,0 +1,195 @@
+/* base styles */
+
+
+body {
+	font-size: 1em;
+	background-color: #ffffff;
+}
+
+p {
+	color: #73645C;
+	line-height: 1.4em;
+	padding: 10px 15px 5px 15px;
+	font-family: 'Lato', sans-serif;
+}
+
+p.endParag {
+	padding: 0 15px 15px 15px;
+}
+
+a {
+	color: #BF7665;
+	text-decoration: none;
+}
+
+/* end base styles */
+
+
+/* header */
+
+#header-nav {
+	background-color: #b0a59e;
+	border-radius: 0;
+	border: 0;
+}
+
+.container-fluid, .navigation {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar {
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.navbar-light .navbar-brand { /* company name */
+	font-family: 'Work Sans', sans-serif;
+	color: #594D46;
+	font-size: 2.2em;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 25px;
+}
+
+.navbar-light .navbar-brand:hover {
+	color: #403936;
+}
+
+button:focus {
+	outline: none;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 10px 25px 10px 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+#collapsibleNavbar {
+	width: 100%;
+}
+
+.bg-light {
+    background-color: #f5f2f0!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #BF7665;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #a1695c;
+}
+
+.nav-link li {
+	padding: 5px;
+}
+
+hr {
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* end header */
+
+
+/* homepage */
+
+h1.text-center {
+	font-size: 2em;
+	font-family: 'Work Sans', sans-serif;
+	color: #BF7665;
+	margin: 35px 0 35px 0;
+}
+
+#main-content.container-fluid {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#menu-tile {
+	height: 100%;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	overflow: hidden;
+	background-color: #e8e4e1;
+}
+
+#menu-tile:hover {
+	box-shadow: 0 1px 5px 1px #BFB2AA;
+}
+
+#chicken, #beef, #sushi {
+	padding-top: 20px;
+	font-size: 1.6em;
+	font-family: 'Work Sans', sans-serif;
+	color: #73645C;
+}
+
+.backTop:hover {
+	color: #f0856c;
+	text-decoration: none;
+}
+
+/* end homepage */
+
+
+
+/***** medium devices only *****/
+@media (min-width: 768px) {
+
+	/* homepage */
+	
+	.col-md-4 {
+		height: 100%;
+	}
+	
+	/*end homepage*/
+}
+
+
+/***** small devices only *****/
+@media (min-width: 576px) and (max-width: 767px) {
+	
+	
+	/* homepage */
+	
+	.col-sm-6 .col-sm-12 {
+		height: 100%;
+	}
+	
+	.col-sm-12 {
+		margin-top: 25px;
+	}
+	
+	/* end homepage */
+
+}
+
+/***** extra small devices only *****/
+@media (max-width: 575px) {
+	
+	
+	/* homepage */
+	
+	.col-xs-12 {
+		height: 100%;
+	}
+	
+	/* end homepage */
+
+}
